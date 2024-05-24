@@ -2,15 +2,15 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;  
     padding: 0;
-    background-color:#f2f2f2;
+    background-color:#fff;
     background-image: url(html\img\logo.png);
     direction: rtl; /* ضبط الاتجاه الافتراضي للنص */
     unicode-bidi:embed; /* للتعامل مع النصوص الثنائية الاتجاه */
 }
 
 header {
-    background: #7342C4;
-    color: #fff;
+    background: #fff;
+    color: #c1a6ed;
     padding: 2px ;
     text-align: center;
 }
@@ -46,7 +46,7 @@ section {
 }
 
 footer {
-    background: #333;
+    background: #7342C4;
     color: #fff;
     text-align: center;
     padding: 6 px 0;
@@ -60,7 +60,7 @@ footer {
     margin: 0;
     padding: 2px;
     overflow: hidden;
-    background-color: #333;
+    background-color: #7342C4;
 }
 
 .horizontal-menu li {

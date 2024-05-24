@@ -6,16 +6,45 @@
     <title>مقدمة في HTML</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<header>
-    <h1>تلخيص مواد ال Html والCss </h1>
-</header>
+
 <body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            direction: rtl;
+            padding: 20px;
+        }
+        .example {
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            direction: rtl; /* ضبط الاتجاه الافتراضي للنص */
+    unicode-bidi:embed; /* للتعامل مع النصوص الثنائية الاتجاه */
+        }
+        .bidi {
+    direction: rtl;
+    unicode-bidi: embed;
+}
+
+.ltr {
+    direction: ltr;
+    unicode-bidi: embed;
+}
+
+        code {
+            background-color: #eaeaea;
+            
+        }
+    </style>
     <nav >
         <ul class="horizontal-menu">
+            <li><a href="index.html">الصفحة الرئيسية  </a></li>
             <li><a href="html-overview.html" >HTMLمقدمة في   </a></li>
-            <li><a href="css-overview.html">مقدمة في CSS</a></li>
+            <li><a href="css-overview.html">CSS</a></li>
             <li><a href="lists.html">القوائم</a></li>
-            <li><a href="forms.html">الاستمارات</a></li>
+                   <li><a href="forms.html">الاستمارات</a></li>
             <li><a href="tabels.html">الجداول</a></li>
             <li><a href="images.html">الصور</a></li>
             <li><a href="site.html">بناء موقع</a></li>
@@ -45,8 +74,142 @@
 &lt;/html&gt;
         </code></pre>
     </section>
+
+
+
+    <div class="example">
+        <h2>عائلة الخطوط (font-family)</h2>
+        <p>تحديد عائلة الخطوط التي سيتم استخدامها:</p>
+        <code>
+            font-family: "Times New Roman", Times, serif;
+        </code>
+        <p>لمزيد من المعلومات: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family" target="_blank">font-family</a></p>
+    </div>
+    <div class="example">
+        <h2>حجم الخط (font-size)</h2>
+        <p>تحديد حجم الخط بوحدات مختلفة:</p>
+        <code>
+            font-size: 16px;<br>
+            font-size: 150%;<br>
+            font-size: 1.5em;<br>
+            font-size: xx-large;
+        </code>
+        <p>لمزيد من المعلومات: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" target="_blank">font-size</a></p>
+    </div>
+    <div class="example">
+        <h2>وزن الخط (font-weight)</h2>
+        <p>تحديد سماكة الخط:</p>
+        <code>
+            font-weight: bold;<br>
+            font-weight: 700;<br>
+            font-weight: bolder;
+        </code>
+        <p>لمزيد من المعلومات: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight" target="_blank">font-weight</a></p>
+    </div>
+    <div class="example">
+        <h2>لون النص (color)</h2>
+        <p>تحديد لون النص باستخدام طرق مختلفة:</p>
+        <code>
+            color: #00ff00;<br>
+            color: rebeccapurple;<br>
+            color: rgb(255, 0, 0);<br>
+            color: hsl(120, 100%, 50%);
+        </code>
+        <p>لمزيد من المعلومات: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color" target="_blank">color</a></p>
+    </div>
+    <div class="example">
+        <h2>محاذاة النص (text-align)</h2>
+        <p>تحديد محاذاة النص:</p>
+        <code>
+            text-align: left;<br>
+            text-align: right;<br>
+            text-align: center;<br>
+            text-align: justify;
+        </code>
+        <p>لمزيد من المعلومات: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align" target="_blank">text-align</a></p>
+    </div>
+    <div class="example">
+        <h2>اتجاه الكتابة (direction)</h2>
+        <p>تحديد اتجاه الكتابة:</p>
+        <code>
+            direction: rtl;<br>
+            direction: ltr;
+        </code>
+        <p>لمزيد من المعلومات: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/direction" target="_blank">direction</a></p>
+    </div>
+    <div class="example">
+        <h2>شفافية العنصر (opacity)</h2>
+        <p>تحديد شفافية العنصر:</p>
+        <code>
+            opacity: 0.7;<br>
+            opacity: 0;<br>
+            opacity: 1;
+        </code>
+        <p>لمزيد من المعلومات: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/opacity" target="_blank">opacity</a></p>
+    </div>
+    <div class="example">
+        <h2>تزيين النص (text-decoration)</h2>
+        <p>إضافة خطوط تحت أو فوق النص:</p>
+        <code>
+            text-decoration: underline;<br>
+            text-decoration: line-through;<br>
+            text-decoration: overline;<br>
+            text-decoration: underline dotted red;
+        </code>
+        <p>لمزيد من المعلومات: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration" target="_blank">text-decoration</a></p>
+    </div>
+    <div class="example">
+        <h2>لون الخلفية (background-color)</h2>
+        <p>تحديد لون خلفية العنصر:</p>
+        <code>
+            background-color: brown;<br>
+            background-color: #74992e;<br>
+            background-color: rgb(117, 153, 46);<br>
+            background-color: hsl(90, 50%, 39%);
+        </code>
+        <p>لمزيد من المعلومات: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color" target="_blank">background-color</a></p>
+    </div>
+    <div class="example">
+        <h2>صورة الخلفية (background-image)</h2>
+        <p>إضافة صورة كخلفية للعنصر:</p>
+        <code>
+            background-image: url("example.jpg");<br>
+            background-image: url("example.jpg"), url("another-example.jpg");
+        </code>
+        <p>لمزيد من المعلومات: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-image" target="_blank">background-image</a></p>
+    </div>
+    <div class="example">
+        <h2>حجم صورة الخلفية (background-size)</h2>
+        <p>تحديد حجم صورة الخلفية:</p>
+        <code>
+            background-size: cover;<br>
+            background-size: contain;<br>
+            background-size: 50%;<br>
+            background-size: 200px 100px;
+        </code>
+        <p>لمزيد من المعلومات: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-size" target="_blank">background-size</a></p>
+    </div>
+    <div class="example">
+        <h2>تكرار صورة الخلفية (background-repeat)</h2>
+        <p>تحديد كيفية تكرار صورة الخلفية:</p>
+        <code>
+            background-repeat: repeat;<br>
+            background-repeat: no-repeat;<br>
+            background-repeat: repeat-x;<br>
+            background-repeat: repeat-y;
+        </code>
+        <p>لمزيد من المعلومات: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat" target="_blank">background-repeat</a></p>
+    </div>
+    <div class="example">
+        <h2>نوع النقاط في القوائم (list-style-type)</h2>
+        <p>تحديد نوع النقاط في القوائم غير المرتبة:</p>
+        <code>
+            list-style-type: disc;<br>
+            list-style-type: circle;<br>
+            list-style-type: square;<br>
+            list-style-type: none;
+        </code>
+        <p>لمزيد من المعلومات: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type" target="_blank">list-style-type</a></p>
+    </div>
 </body>
-<footer>
-    <p>حقوق النشر &copy; נטע@ חורה</p>
-</footer>
 </html>

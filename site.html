@@ -6,15 +6,15 @@
     <title>مقدمة في HTML</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<header>
-    <h1>تلخيص مواد ال Html والCss </h1></header>
 <body>
     <nav >
         <ul class="horizontal-menu">
+            <li><a href="index.html">الصفحة الرئيسية  </a></li>
             <li><a href="html-overview.html" >HTMLمقدمة في   </a></li>
-            <li><a href="css-overview.html">مقدمة في CSS</a></li>
+            <li><a href="css-overview.html">CSS</a></li>
+
             <li><a href="lists.html">القوائم</a></li>
-            <li><a href="forms.html">الاستمارات</a></li>
+                   <li><a href="forms.html">الاستمارات</a></li>
             <li><a href="tabels.html">الجداول</a></li>
             <li><a href="images.html">الصور</a></li>
             <li><a href="site.html">بناء موقع</a></li>
@@ -24,7 +24,9 @@
         <h2>بناء موقع كامل</h2>
         <p>لبناء موقع كامل، يجب دمج كل ما تعلمته من HTML و CSS في مشروع واحد. يتضمن ذلك إنشاء ملفات HTML للهيكل الأساسي للموقع، واستخدام CSS لتنسيق المظهر.</p>
         <h3>مثال على صفحة ويب بسيطة:</h3>
-        <pre><code>
+    <div class="pcode">
+<pre><code>
+
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
@@ -60,10 +62,21 @@
   &lt;/body&gt;
 &lt;/html&gt;
         </code></pre>
+    </div>
+
     </section>
+    <style>
+     .pcode{
+        background-color: #f4f4f4;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 20px;
+        unicode-bidi:embed; /* للتعامل مع النصوص الثنائية الاتجاه */
+    }
+</style>
 
 </body>
 <footer>
-    <p>حقوق النشر &copy; נטע@ חורה</p>
+    <p>حقوق النشر &copy; נטע@רהט חורה</p>
 </footer>
 </html>
