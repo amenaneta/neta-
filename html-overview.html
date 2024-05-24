@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقدمة في HTML</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <h1>تلخيص مواد ال Html والCss </h1></header>
+<body>
+    <nav>
+        <ul class="horizontal-menu">
+            <li><a href="index.html">الصفحة الرئيسية</a></li>
+            <li><a href="css-overview.html">مقدمة في CSS</a></li>
+            <li><a href="lists.html">القوائم</a></li>
+            <li><a href="forms">الاستمارات</a></li>
+            <li><a href="#tables">الجداول</a></li>
+            <li><a href="#images">الصور</a></li>
+            <li><a href="#site">بناء موقع</a></li>
+        </ul>
+    </nav>
+    <section >
+        <h2>مقدمة في الHTML</h2>
+        <p>
+          HTML هي اللغة الأساسية لتكوين صفحات الويب. تستخدم لوصف بنية صفحات الويب باستخدام علامات (tags).
+           كل عنصر HTML يكون مغلفًا بعلامة بداية وعلامة نهاية.
+        </p>
+        <h3>أمثلة على العناصر الأساسية في HTML:</h3>
+        <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;صفحة مثال&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;مرحبًا بكم في موقعي&lt;/h1&gt;
+    &lt;p&gt;هذه فقرة نصية.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
+    </section>
+        <section>
+          <h2>ملخص العلامات في HTML</h2>
+          <table>
+              <tr>
+                  <th>اسم العلامة</th>
+                  <th>مثال للاستخدام</th>
+                  <th>الهدف</th>
+                  <th>الخصائص التي يجب إضافتها إلى العلامة (Attributes)</th>
+                  <th>العرض: مضمن (inline) أو كفقرة منفصلة (block)</th>
+                  <th>نوع الإغلاق: محكم أو داخلي</th>
+                  <th>ميزات التصميم (التشديد، مائل، تسطير، يتوسطه خط، حجم الخط)</th>
+              </tr>
+              <tr>
+                  <td>h1-h6</td>
+                  <td>&lt;h1&gt;Headline&lt;/h1&gt;</td>
+                  <td>عناوين</td>
+                  <td>-</td>
+                  <td>block</td>
+                  <td>محكم</td>
+                  <td>حجم الخط حسب اسم العلامة (مثل h1 أكبر حجم)</td>
+              </tr>
+              <tr>
+                  <td>p</td>
+                  <td>&lt;p&gt;a long paragraph&lt;/p&gt;</td>
+                  <td>فقرة</td>
+                  <td>-</td>
+                  <td>block</td>
+                  <td>محكم</td>
+                  <td>-</td>
+              </tr>
+              <tr>
+                  <td>img</td>
+                  <td>&lt;img src="www" alt="picture"&gt;</td>
+                  <td>صورة</td>
+                  <td>src, alt</td>
+                  <td>inline</td>
+                  <td>داخلي</td>
+                  <td>-</td>
+              </tr>
+              <tr>
+                  <td>a</td>
+                  <td>&lt;a href="url"&gt;Link&lt;/a&gt;</td>
+                  <td>رابط</td>
+                  <td>href</td>
+                  <td>inline</td>
+                  <td>محكم</td>
+                  <td>يتغير لون النص والتسطير وفقًا للحالة (الأزرق قبل النقر، والأرجواني بعد النقر)</td>
+              </tr>
+              <tr>
+                  <td>ol</td>
+                  <td>&lt;ol&gt;&lt;li&gt;Coffee&lt;/li&gt;&lt;li&gt;Tea&lt;/li&gt;&lt;li&gt;Milk&lt;/li&gt;&lt;/ol&gt;</td>
+                  <td>قائمة مرقمة</td>
+                  <td>-</td>
+                  <td>block</td>
+                  <td>محكم</td>
+                  <td>النزول سطر قبل وبعد</td>
+              </tr>
+              <tr>
+                  <td>ul</td>
+                  <td>&lt;ul&gt;&lt;li&gt;Coffee&lt;/li&gt;&lt;li&gt;Tea&lt;/li&gt;&lt;li&gt;Milk&lt;/li&gt;&lt;/ul&gt;</td>
+                  <td>قائمة غير مرقمة</td>
+                  <td>-</td>
+                  <td>block</td>
+                  <td>محكم</td>
+                  <td>النزول سطر قبل وبعد</td>
+              </tr>
+              <tr>
+                  <td>li</td>
+                  <td>&lt;li&gt;Coffee&lt;/li&gt;</td>
+                  <td>عنصر في القائمة</td>
+                  <td>-</td>
+                  <td>block</td>
+                  <td>محكم</td>
+                  <td>إضافة رمز نقطي/رقم قبل السطر</td>
+              </tr>
+              <tr>
+                  <td>strong</td>
+                  <td>&lt;strong&gt;Important text&lt;/strong&gt;</td>
+                  <td>تشديد / تظليل</td>
+                  <td>-</td>
+                  <td>inline</td>
+                  <td>محكم</td>
+                  <td>تظليل / تشديد</td>
+              </tr>
+              <tr>
+                  <td>em</td>
+                  <td>&lt;em&gt;had&lt;/em&gt;</td>
+                  <td>مائل / خط مائل</td>
+                  <td>-</td>
+                  <td>inline</td>
+                  <td>محكم</td>
+                  <td>مائل / خط مائل</td>
+              </tr>
+              <tr>
+                <td>u</td>
+                <td>&lt;u&gt;first term&lt;/u&gt;</td>
+                <td>خط سفلي</td>
+                <td>-</td>
+                <td>inline</td>
+                <td>محكم</td>
+                <td>خط سفلي</td>
+            </tr>
+            <tr>
+                <td>del</td>
+                <td>&lt;del&gt;This text has been deleted&lt;/del&gt;</td>
+                <td>خط متوسط</td>
+                <td>-</td>
+                <td>inline</td>
+                <td>محكم</td>
+                <td>خط متوسط</td>
+            </tr>
+            <tr>
+                <td>br</td>
+                <td>Mozilla&lt;br&gt;331 E. Evelyn Avenue&lt;br&gt;Mountain View, CA&lt;br&gt;94041&lt;br&gt;USA&lt;br&gt;</td>
+                <td>نزول سطر</td>
+                <td>-</td>
+                <td>inline</td>
+                <td>داخلي</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>hr</td>
+                <td>&lt;hr&gt;</td>
+                <td>خط أفقي</td>
+                <td>-</td>
+                <td>block</td>
+                <td>داخلي</td>
+                <td>خط على عرض الشاشة</td>
+            </tr>
+            <tr>
+                <td>blockquote</td>
+                <td>&lt;blockquote cite="https://tools.ietf.org/html/rfc1149"&gt;Avian carriers can provide high delay&lt;/blockquote&gt;</td>
+                <td>فقرة مقتبسة</td>
+                <td>cite</td>
+                <td>block</td>
+                <td>محكم</td>
+                <td>تغيير نوع الخط</td>
+            </tr>
+            <tr>
+                <td>q</td>
+                <td>&lt;q cite="https://www.mozilla.org/enUS/about/history/details/"&gt; Firefox 1.0 was released in 2004 and became a big success.&lt;/q&gt;</td>
+                <td>اقتباس مضمن في السطر</td>
+                <td>cite</td>
+                <td>inline</td>
+                <td>محكم</td>
+                <td>تغيير نوع الخط</td>
+            </tr>
+            <tr>
+                <td>code</td>
+                <td>The function &lt;code&gt;selectAll()&lt;/code&gt;</td>
+                <td>مقطع كود</td>
+                <td>-</td>
+                <td>inline</td>
+                <td>محكم</td>
+                <td>تغيير نوع الخط</td>
+            </tr>
+            <tr>
+                <td>small</td>
+                <td>Creative Commons Attribution-ShareAlike 2.5 Generic License.&lt;/small&gt;</td>
+                <td>كتابة صغيرة</td>
+                <td>-</td>
+                <td>inline</td>
+                <td>محكم</td>
+                <td>تصغير حجم الخط</td>
+            </tr>
+            <tr>
+                <td>sup</td>
+                <td>a&lt;sup&gt;2&lt;/sup&gt; + b&lt;sup&gt;2&lt;/sup&gt; = c&lt;sup&gt;2&lt;/sup&gt;</td>
+                <td>كتابة علوية</td>
+                <td>-</td>
+                <td>inline</td>
+                <td>محكم</td>
+                <td>تصغير الخط وتغيير موضعه</td>
+            </tr>
+            <tr>
+                <td>div</td>
+                <td>&lt;div&gt;&lt;p&gt;Here's a very interesting note displayed in a lovely shadowed box.&lt;/p&gt;&lt;/div&gt;</td>
+                <td>مقطع من المحتوى / الفقرة</td>
+                <td>-</td>
+                <td>block</td>
+                <td>محكم</td>
+                <td>النزول سطر قبل وبعد المحتوى</td>
+            </tr>
+            <tr>
+                <td>span</td>
+                <td>Add the &lt;span&gt;basil&lt;/span&gt; and the &lt;span&gt;pine nuts&lt;/span&gt;</td>
+                <td>تظليل</td>
+                <td>-</td>
+                <td>inline</td>
+                <td>محكم</td>
+                <td>-</td>
+            </tr>
+        </table>
+    </section>
+   
+</body>
+<footer>
+    <p>حقوق النشر &copy; נטע@ חורה</p>
+</footer>
+</html>

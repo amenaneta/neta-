@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+      <h1>تلخيص مواد ال Html والCss </h1>    </header>
+    <nav >
+        <ul class="horizontal-menu">
+            <li><a href="html-overview.html" >HTMLمقدمة في   </a></li>
+            <li><a href="css-overview.html">مقدمة في CSS</a></li>
+            <li><a href="lists.html">القوائم</a></li>
+            <li><a href="forms">الاستمارات</a></li>
+            <li><a href="#tables">الجداول</a></li>
+            <li><a href="#images">الصور</a></li>
+            <li><a href="#site">بناء موقع</a></li>
+        </ul>
+    </nav>
+
+   
+    <section id="images">
+        <h2>الصور</h2>
+        <p>يمكن إضافة الصور إلى صفحات الويب باستخدام العنصر <code>&lt;img&gt;</code> وتحديد مصدر الصورة باستخدام الخاصية <code>src</code>.</p>
+        <h3>مثال على إضافة صورة:</h3>
+        <pre><code>
+&lt;img src="path/to/image.jpg" alt="وصف الصورة"&gt;
+        </code></pre>
+        <p>يمكنك أيضًا إضافة حدود، وتغيير حجم الصورة باستخدام CSS.</p>
+    </section>
+
+    <section id="tables">
+        <h2>الجداول</h2>
+        <p>تُستخدم الجداول لعرض البيانات في شكل جدولي. تتكون الجداول من صفوف وأعمدة.</p>
+        <h3>مثال على جدول:</h3>
+        <pre><code>
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;الاسم&lt;/th&gt;
+    &lt;th&gt;العمر&lt;/th&gt;
+    &lt;th&gt;المدينة&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;أحمد&lt;/td&gt;
+    &lt;td&gt;25&lt;/td&gt;
+    &lt;td&gt;القاهرة&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;ليلى&lt;/td&gt;
+    &lt;td&gt;30&lt;/td&gt;
+    &lt;td&gt;الإسكندرية&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+        </code></pre>
+        <p >
+          <table>
+          <tr>
+            <th>الاسم</th>
+            <th>العمر</th>
+            <th>المدينة</th>
+          </tr>
+          <tr>
+            <td>أحمد</td>
+            <td>25</td>
+            <td>القاهرة</td>
+          </tr>
+          <tr>
+            <td>ليلى</td>
+            <td>30</td>
+            <td>الإسكندرية</td>
+          </tr>
+        </table></p>
+    </section>
+
+    <section id="site">
+        <h2>بناء موقع كامل</h2>
+        <p>لبناء موقع كامل، يجب دمج كل ما تعلمته من HTML و CSS في مشروع واحد. يتضمن ذلك إنشاء ملفات HTML للهيكل الأساسي للموقع، واستخدام CSS لتنسيق المظهر.</p>
+        <h3>مثال على صفحة ويب بسيطة:</h3>
+        <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;موقعي الشخصي&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;h1&gt;مرحبًا بكم في موقعي الشخصي&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;nav&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#about"&gt;حول&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#services"&gt;خدمات&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#contact"&gt;اتصل بنا&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+    &lt;section id="about"&gt;
+      &lt;h2&gt;حول&lt;/h2&gt;
+      &lt;p&gt;هذه صفحة حول.&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;section id="services"&gt;
+      &lt;h2&gt;خدمات&lt;/h2&gt;
+      &lt;p&gt;هذه صفحة خدمات.&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;section id="contact"&gt;
+      &lt;h2&gt;اتصل بنا&lt;/h2&gt;
+      &lt;p&gt;هذه صفحة اتصل بنا.&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;footer&gt;
+      &lt;p&gt;حقوق النشر &copy; 2024 موقعي الشخصي&lt;/p&gt;
+    &lt;/footer&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
+    </section>
+
+    <footer>
+        <p>حقوق النشر &copy; נטע@ חורה</p>
+    </footer>
+</body>
+</html>

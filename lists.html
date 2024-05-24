@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقدمة في HTML</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <h1>تلخيص مواد ال Html والCss </h1></header>
+<body>
+    <nav>
+        <ul class="horizontal-menu">
+            <li><a href="index.html">الصفحة الرئيسية</a></li>
+            <li><a href="html-overview.html" >HTMLمقدمة في   </a></li>
+            <li><a href="css-overview.html">مقدمة في CSS</a></li>
+            <li><a href="forms">الاستمارات</a></li>
+            <li><a href="#tables">الجداول</a></li>
+            <li><a href="#images">الصور</a></li>
+            <li><a href="#site">بناء موقع</a></li>
+        </ul>
+    </nav>
+    <section id="lists">
+        <h2>القوائم</h2>
+        <h3>القوائم غير المرتبة</h3>
+        <pre><code>
+&lt;ul&gt;
+  &lt;li&gt;عنصر قائمة 1&lt;/li&gt;
+  &lt;li&gt;عنصر قائمة 2&lt;/li&gt;
+  &lt;li&gt;عنصر قائمة 3&lt;/li&gt;
+&lt;/ul&gt;
+        </code></pre>
+        <h3>القوائم المرتبة</h3>
+        <pre><code>
+&lt;ol&gt;
+  &lt;li&gt;عنصر قائمة 1&lt;/li&gt;
+  &lt;li&gt;عنصر قائمة 2&lt;/li&gt;
+  &lt;li&gt;عنصر قائمة 3&lt;/li&gt;
+&lt;/ol&gt;
+        </code></pre>
+    </section>
+    
+        <h3>قائمة منسدلة</h3>
+        <div class="dropdown">
+            <button class="dropbtn">قائمة منسدلة</button>
+            <div class="dropdown-content">
+                <a href="#">رابط 1</a>
+                <a href="#">رابط 2</a>
+                <a href="#">رابط 3</a>
+            </div>
+        </div>
+    
+        <h3>قائمة أسفل الصفحة</h3>
+        <div class="bottom-nav">
+            <p >الصفحة الرئيسية</p>
+            <p >الأخبار</p>
+            <p>اتصل بنا</p>
+            <p>عن الموقع</p>
+        </div>
+    
+        <h3>Breadcrumbs</h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">الصفحة الرئيسية</a></li>
+                <li class="breadcrumb-item"><a href="#">قسم 1</a></li>
+                <li class="breadcrumb-item active" aria-current="page">صفحة فرعية</li>
+            </ol>
+          </nav>
+          
+    </section>
+    
+</body>
+
+
+
+
+<footer>
+    <p>حقوق النشر &copy; נטע@ חורה</p>
+</footer>
+</html>
