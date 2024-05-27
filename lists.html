@@ -5,76 +5,241 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مقدمة في HTML</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            direction: rtl;
+            padding: 20px;
+        }
+        .example {
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            direction: rtl; /* ضبط الاتجاه الافتراضي للنص */
+    unicode-bidi:embed; /* للتعامل مع النصوص الثنائية الاتجاه */
+        }
+        .bidi {
+    direction: rtl;
+    unicode-bidi: embed;
+}
+
+.ltr {
+    direction: ltr;
+    unicode-bidi: embed;
+}
+
+        code {
+            background-color: #eaeaea;
+            
+        }
+        
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: #f9f9f9;
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display:inline;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: inline;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #ccc;
+  }
+  .bottom-nav {
+    /* position: fixed; */
+    bottom: 0;
+    width: 50%;
+    background-color: #eebce4;
+    overflow: auto;
+  }
+  
+  .bottom-nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  } 
+  
+  .bottom-nav a:hover {
+    background-color: #eebce4;
+    color: black;
+  }
+  .breadcrumb {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: #f5f5f5;
+  }
+  
+  .breadcrumb-item {
+    display: inline;
+  }
+  
+  .breadcrumb-item a {
+    text-decoration: none;
+  }
+  
+  .breadcrumb-item.active {
+    color: #333;
+  }
+    </style>
 </head>
 <body>
-    <nav >
+    <nav>
         <ul class="horizontal-menu">
-            <li><a href="index.html">الصفحة الرئيسية  </a></li>
-            <li><a href="html-overview.html" >HTMLمقدمة في   </a></li>
+            <li><a href="index.html">الصفحة الرئيسية</a></li>
+            <li><a href="html-overview.html">مقدمة في HTML</a></li>
             <li><a href="css-overview.html">CSS</a></li>
-
             <li><a href="lists.html">القوائم</a></li>
-                   <li><a href="forms.html">الاستمارات</a></li>
+            <li><a href="forms.html">الاستمارات</a></li>
             <li><a href="tabels.html">الجداول</a></li>
             <li><a href="images.html">الصور</a></li>
             <li><a href="site.html">بناء موقع</a></li>
         </ul>
     </nav>
+        <ul>
+            <li><a href="#lists">القوائم غير المرتبة</a></li>
+            <li><a href="#ordered-list">القوائم المرتبة</a></li>
+            <li><a href="#breadcrumbs">Breadcrumbs</a></li>
+            <li><a href="#dropdown-list"> قائمة منسدلة</a></li>
+            <li><a href="#bottom-navigation">قائمة أسفل الصفحة</a></li>
+            <li><a href="listInCss.html">كيفية استخدام العناصر في ال css</a></li>
+
+        </ul>>
+
+    <nav>
+
+    </nav>
+    <div class="example">
+    
     <section id="lists">
         <h2>القوائم</h2>
-        <h3>القوائم غير المرتبة</h3>
-        <pre><code>
+        <section >
+            <h3>القوائم غير المرتبة</h3>
+            <ul class="unordered-list">
+                <li>عنصر قائمة1</li>
+                <li>عنصر قائمة2</li>
+                <li>عنصر قائمة3</li>
+            </ul>
+
+            <pre><code>
 &lt;ul&gt;
   &lt;li&gt;عنصر قائمة 1&lt;/li&gt;
   &lt;li&gt;عنصر قائمة 2&lt;/li&gt;
   &lt;li&gt;عنصر قائمة 3&lt;/li&gt;
 &lt;/ul&gt;
-        </code></pre>
-        <h3>القوائم المرتبة</h3>
-        <pre><code>
+            </code></pre>
+        </section>
+    </div>
+        <div class="example">
+        <section id="ordered-list">
+            <h3>القوائم المرتبة</h3>
+            <ol>
+                <li>عنصر قائمة1</li>
+                <li>عنصر قائمة2</li>
+                <li>عنصر قائمة3</li>
+            </ol>
+            <pre><code>
 &lt;ol&gt;
   &lt;li&gt;عنصر قائمة 1&lt;/li&gt;
   &lt;li&gt;عنصر قائمة 2&lt;/li&gt;
   &lt;li&gt;عنصر قائمة 3&lt;/li&gt;
 &lt;/ol&gt;
-        </code></pre>
-    </section>
+
+
+            </code></pre>
+        </section>
+    </div>
+    <div class="example">
+
+        <section id="breadcrumbs">
+            <h3>Breadcrumbs</h3>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">الصفحة الرئيسية</a></li>
+                    <li class="breadcrumb-item"><a href="lists.html"> قوائم</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">صفحة فرعية</li>
+                </ol>
+            </nav>
+            <pre><code>
+&lt;h3&gt;Breadcrumbs&lt;/h3&gt;
+    &lt;nav "&gt;
+        &lt;ol class="breadcrumb"&gt;
+            &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;الصفحة الرئيسية&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="breadcrumb-item">&lt;a href="lists.html"&gt; قوائم&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="breadcrumb-item active" aria-current="page"&gt;صفحة فرعية&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/nav&gt;
+</code></pre>
     
-        <h3>قائمة منسدلة</h3>
-        <div class="dropdown">
-            <button class="dropbtn">قائمة منسدلة</button>
-            <div class="dropdown-content">
-                <a href="#">رابط 1</a>
-                <a href="#">رابط 2</a>
-                <a href="#">رابط 3</a>
+        
+    
+  
+
+        </section>
+        </div>
+    </section>
+        <div class="example">
+
+        <section id="dropdown-list">
+            <h3>قائمة منسدلة</h3>
+            <div class="dropdown">
+                <button class="dropbtn">قائمة منسدلة</button>
+                <div class="dropdown-content">
+                    <a href="#">رابط 1</a>
+                    <a href="#">رابط 2</a>
+                    <a href="#">رابط 3</a>
+                </div>
             </div>
-        </div>
-    
-        <h3>قائمة أسفل الصفحة</h3>
-        <div class="bottom-nav">
-            <p >الصفحة الرئيسية</p>
-            <p >الأخبار</p>
-            <p>اتصل بنا</p>
-            <p>عن الموقع</p>
-        </div>
-    
-        <h3>Breadcrumbs</h3>
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">الصفحة الرئيسية</a></li>
-                <li class="breadcrumb-item"><a href="#">قسم 1</a></li>
-                <li class="breadcrumb-item active" aria-current="page">صفحة فرعية</li>
-            </ol>
-          </nav>
-          
-    </section>
-    
+        </section>
+    </div>
+
+        <div class="example">
+
+        <section id="bottom-navigation">
+            <h3>قائمة أسفل الصفحة</h3>
+            <div class="bottom-nav">
+                <p>الصفحة الرئيسية</p>
+                <p>الأخبار</p>
+                <p>اتصل بنا</p>
+                <p>عن الموقع</p>
+            </div>
+        </section>
+    </div>
+
+
+    <footer>
+        <p>حقوق النشر &copy; נטע@רהט חורה</p>
+    </footer>
 </body>
-
-
-
-
-<footer>
-    <p>حقوق النشر &copy; נטע@רהט חורה</p>
-</footer>
 </html>

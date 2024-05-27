@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقدمة في HTML</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+    }
+    
+
+    
+    .cssitems h2 {
+        color: #df6ce5;
+        margin-top: 20px;
+    }
+    .cssitems ul {
+        list-style: none;
+        background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            direction: rtl; /* ضبط الاتجاه الافتراضي للنص */
+    unicode-bidi:embed; /* للتعامل مع النصوص الثنائية الاتجاه */
+        margin-left: 20px;
+    }
+    /* .cssitems ul li {
+        margin-bottom: 10px;
+    } */
+    
+</style>
+    
+</head>
+<body>
+    <nav>
+        <ul class="horizontal-menu">
+            <li><a href="index.html">الصفحة الرئيسية</a></li>
+            <li><a href="html-overview.html">مقدمة في HTML</a></li>
+            <li><a href="css-overview.html">CSS</a></li>
+            <li><a href="lists.html">القوائم</a></li>
+            <li><a href="forms.html">الاستمارات</a></li>
+            <li><a href="tabels.html">الجداول</a></li>
+            <li><a href="images.html">الصور</a></li>
+            <li><a href="site.html">بناء موقع</a></li>
+        </ul>
+    </nav>
+    <nav>
+        <ul>
+            <li><a href="lists.html">القوائم</a></li>
+            <li><a href="#cssitems">خصائص في الcss</a></li>
+            <li><a href="#cssitems-example">امثلة</a></li>
+        </ul>
+    </nav>
+    <section class="cssitems">
+     
+        <h2> display:</h2>
+        <ul>
+            <li><strong>block:</strong> يجعل العنصر يأخذ عرض الصفحة بالكامل ويبدأ في سطر جديد. القوائم العمودية عادةً تستخدم هذا.</li>
+            <li><strong>inline:</strong> يجعل العنصر يظهر في نفس السطر دون كسر السطر. يمكن استخدامه لعناصر القائمة الأفقية.</li>
+            <li><strong>inline-block:</strong> يجمع بين خصائص block و inline، حيث يعرض العنصر في نفس السطر لكنه يسمح بتحديد عرض وارتفاع.</li>
+            <li><strong>none:</strong> يخفي العنصر من الصفحة، مما يجعله غير مرئي.</li>
+        </ul>
+
+        <h2> position:</h2>
+        <ul>
+            <li><strong>static:</strong> الوضع الافتراضي، لا يمكن التحكم بموقع العنصر باستخدام خصائص top، right، bottom، أو left.</li>
+            <li><strong>relative:</strong> يمكن تحريك العنصر من موقعه الطبيعي باستخدام الخصائص المذكورة أعلاه.</li>
+            <li><strong>absolute:</strong> يجعل العنصر يتموضع بالنسبة إلى أقرب عنصر أبوي ذو خاصية position غير static.</li>
+            <li><strong>fixed:</strong> يجعل العنصر ثابتًا بالنسبة إلى نافذة العرض حتى مع التمرير.</li>
+            <li><strong>sticky:</strong> مزيج من relative و fixed، حيث يبقى العنصر "ثابتًا" عند تمرير الصفحة.</li>
+        </ul>
+
+        <h2> list-style:</h2>
+        <ul>
+            <li><strong>none:</strong> لإزالة النقط أو الأرقام من عناصر القائمة.</li>
+            <li><strong>disc, circle, square:</strong> لتغيير نوع النقط في القوائم غير المرتبة.</li>
+            <li><strong>decimal, lower-alpha, upper-alpha:</strong> لتغيير نوع الأرقام أو الحروف في القوائم المرتبة.</li>
+        </ul>
+
+        <h2> float:</h2>
+        <ul>
+            <li><strong>left, right:</strong> تجعل العنصر يطفو إلى اليسار أو اليمين، وغالبًا ما تستخدم لإنشاء القوائم الأفقية.</li>
+            <li><strong>none:</strong> الوضع الافتراضي حيث لا يطفو العنصر.</li>
+        </ul>
+
+        <h2> flex (عند استخدام display: flex):</h2>
+        <ul>
+            <li><strong>flex-direction:</strong> يحدد اتجاه عناصر الفلكس (مثل row للقوائم الأفقية و column للقوائم العمودية).</li>
+            <li><strong>justify-content:</strong> لضبط توزيع المساحة بين العناصر (مثل space-between، space-around، center).</li>
+            <li><strong>align-items:</strong> لضبط المحاذاة العمودية للعناصر (مثل flex-start، flex-end، center).</li>
+        </ul>
+
+        <h2> margin و padding:</h2>
+        <ul>
+            <li><strong>margin:</strong> لضبط المسافة الخارجية حول العنصر.</li>
+            <li><strong>padding:</strong> لضبط المسافة الداخلية داخل العنصر.</li>
+        </ul>
+
+        <h2>تطبيق الخصائص على القوائم:</h2>
+        <ul>
+            <li><strong>القائمة الأفقية:</strong> يمكن استخدام display: inline أو display: inline-block على عناصر القائمة، أو display: flex مع flex-direction: row.</li>
+            <li><strong>القائمة العمودية:</strong> يمكن استخدام display: block أو display: flex مع flex-direction: column.</li>
+            <li><strong>القائمة المنسدلة:</strong> تتطلب استخدام خصائص position: absolute لعناصر القائمة الفرعية لجعلها تظهر تحت العنصر الأب عند التفاعل (مثل التحويم فوق العنصر).</li>
+            <li><strong>القائمة أسفل الصفحة:</strong> يمكن استخدام position: fixed مع bottom: 0 لضمان بقاء القائمة في أسفل الصفحة.</li>
+            <li><strong>قائمة breadcrumb:</strong> غالبًا ما تستخدم display: inline أو display: inline-block لعناصر القائمة مع بعض التباعد باستخدام margin أو padding.</li>
+        </ul>
+    </section>
+    <section class="cssitems-example">
+        <h3>القوائم الأفقية</h3>
+        <pre><code>
+    .horizontal-list {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        padding: 0;
+    }
+    .horizontal-list li {
+        margin-right: 10px;
+    }
+        </code></pre>
+        
+        <h3>القوائم العمودية</h3>
+        <pre><code>
+    .vertical-list {
+        display: block;
+        list-style: disc inside;
+        padding: 0;
+    }
+    .vertical-list li {
+        margin-bottom: 10px;
+    }
+        </code></pre>
+        
+        <h3>القوائم المنسدلة</h3>
+        <pre><code>
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+        </code></pre>
+        
+        <h3>القائمة أسفل الصفحة</h3>
+        <pre><code>
+    .footer-list {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #333;
+        color: white;
+        text-align: center;
+        list-style: none;
+        padding: 10px 0;
+        margin: 0;
+    }
+    .footer-list li {
+        display: inline;
+        margin: 0 15px;
+    }
+        </code></pre>
+        
+        <h3>قائمة breadcrumb</h3>
+        <pre><code>
+    .breadcrumb {
+        display: flex;
+        list-style: none;
+        padding: 8px 0;
+        background-color: #f5f5f5;
+    }
+    .breadcrumb li {
+        margin-right: 10px;
+    }
+    .breadcrumb li::after {
+        content: "/";
+        margin-left: 10px;
+    }
+    .breadcrumb li:last-child::after {
+        content: "";
+    }
+        </code></pre>
+    </section>
+    <footer>
+        <p>حقوق النشر &copy; נטע@רהט חורה</p>
+    </footer>
+</body>
+</html>
